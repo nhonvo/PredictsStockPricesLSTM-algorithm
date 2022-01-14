@@ -40,7 +40,7 @@ LSTM explain
 - Pandas = 1.3.5:
 - ikit-learn  = 1.0 :
 - nsorflow = 2.7.0
-- reamlit = 1.0.0:
+- Streamlit = 1.0.0:
 - Yfinance = 0.1.64 
 - Matplotlib = 3.3.4 
  

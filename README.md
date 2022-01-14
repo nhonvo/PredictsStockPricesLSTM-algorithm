@@ -25,6 +25,6 @@ Predict stock price:
 
 LSTM explain
 
-![markdown]
+![markdown](source/Đồ án trí tuệ nhân tạo.docx)
 
 ## How to install project

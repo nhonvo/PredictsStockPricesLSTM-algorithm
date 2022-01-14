@@ -56,5 +56,5 @@ LSTM explain
 
 # License
   
-Võ Thương Trường Nhơn		Phạm Đức Tài	
+Võ Thương Trường Nhơn		Phạm Đức Tài @tai121	
 	Nguyễn Hồng Thái

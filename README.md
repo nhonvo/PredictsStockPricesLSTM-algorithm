@@ -1,5 +1,8 @@
 # Web predicts stock prices using Long - Short Term Memory algorithm
 
+
+Give me some start please!!!
+
 ## User interface image:
 
 

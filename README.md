@@ -23,6 +23,8 @@ Predict stock price:
 
 # Code train 
 
+![download](https://user-images.githubusercontent.com/83550230/149552455-47a24ddd-dcb5-465f-8a85-621752af0614.png)
+
 LSTM explain
 
 ![markdown](https://github.com/truongnhon-hutech/github-project-du-doan-gia-co-phieu-LSTM/blob/master/source/%C4%90%E1%BB%93%20%C3%A1n%20tr%C3%AD%20tu%E1%BB%87%20nh%C3%A2n%20t%E1%BA%A1o.docx)

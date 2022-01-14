@@ -23,5 +23,8 @@ Predict stock price:
 
 # Code train 
 
+LSTM explain
+
+![markdown]
 
 ## How to install project

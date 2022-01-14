@@ -29,7 +29,7 @@ LSTM explain
 
 ## How to install project
 
-###Library required
+### Library required
 
 - Numpy  =  1.21.5:
 - Pandas = 1.3.5:

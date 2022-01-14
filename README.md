@@ -21,6 +21,7 @@ Predict stock price:
 
 ![markdown](https://github.com/truongnhon-hutech/github-project-du-doan-gia-co-phieu-LSTM/blob/master/source/5.png)
 
-#Train code 
+# Code train 
+
 
 ## How to install project

@@ -28,11 +28,11 @@ Predict stock price:
 <!-- <image src = "source/3.png" class = "center"></image> -->
 
 
-<image src = "source/4.png" class = "center"></image>
+<image src = "source/4.png" class = "smallimg"></image>
 
 -	Output: Stock price
 
-<image src = "source/5.png" class = "center"></image>
+<image src = "source/5.png" class = "smallimg"></image>
 
 # Code train 
 

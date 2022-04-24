@@ -1,28 +1,38 @@
 # Web predicts stock prices using Long - Short Term Memory algorithm
 
+*Give me some stars please!!!*
 
-Give me some start please!!!
+Long - Short Term Memory (Lstm) is a good algorithm for predicting stock prices. By the way use prices of past we can predict the prices of present and future.
 
-## User interface image:
+Summary:
+...
+
+<div class="title">The way use website </div>
+
+- __User interface__
 
 
-![alt](https://github.com/truongnhon-hutech/github-project-du-doan-gia-co-phieu-LSTM/blob/master/source/1.png)
+<image src = "source/1.png" class = "center"></image>
+<br/>
+<br/>
+- To predict price stock you need to input the name of stock and the number of days you want to predict
 
+-	__Choose: DayBegin, DayEnd, Stock code, Fieldstock.__
 
--	Choose: DayBegin, DayEnd, Stock code, Fieldstock.
+<image src = "source/2.png" class = "smallimg"></image>
 
-![alt](https://github.com/truongnhon-hutech/github-project-du-doan-gia-co-phieu-LSTM/blob/master/source/2.png)
 
 Predict stock price:
 -	Choose day to predict.
 
-![alt](https://github.com/truongnhon-hutech/github-project-du-doan-gia-co-phieu-LSTM/blob/master/source/4.png)
+<!-- <image src = "source/3.png" class = "center"></image> -->
 
-![alt](https://github.com/truongnhon-hutech/github-project-du-doan-gia-co-phieu-LSTM/blob/master/source/3.png)
+
+<image src = "source/4.png" class = "center"></image>
 
 -	Output: Stock price
 
-![alt](https://github.com/truongnhon-hutech/github-project-du-doan-gia-co-phieu-LSTM/blob/master/source/5.png)
+<image src = "source/5.png" class = "center"></image>
 
 # Code train 
 
@@ -55,6 +65,28 @@ LSTM explain
 
 
 # License
-  
-Võ Thương Trường Nhơn		Phạm Đức Tài @tai121	
-	Nguyễn Hồng Thái
+Any questions? Feel free to contact me at: vothuongtruongnhon2002@gmail.com
+
+<style>
+	/* center */
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 500px;
+		height: 250px;
+	}
+	.title{
+		color: #0066ff;
+		font-size: 30px;
+		font-weight: bold;
+		font-family: "Helvetica"
+	}
+	.smallimg{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		height: 50%;
+	}
+</style>

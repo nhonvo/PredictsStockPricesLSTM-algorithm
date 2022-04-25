@@ -34,6 +34,7 @@ Cell state is the horizontal line that runs through the top of the diagram, like
 Portals are an optional way to pass information. They use sigmoid and tanh activation functions. An LSTM has three ports, for protection and control of cell state.
 
 a.	Forget gate:
+
 <image src = "source/c2.png" class = "smallimg"></image>
 
 						- Image 3: Forget gate
@@ -51,14 +52,17 @@ b.	Input gate:
 						- Image 4: Input gate
 
 -	Input gate : q determines the new information to be stored in the cell state. Consists of two parts: The sigmod class that decides which values are updated and a tanh class that holds new values that can be added to the cell state .
+
 <image src = "source/c5.png" class = "smallimg"></image>
 
  
 -	Finally combine the above two to create a new value to update the cell state.
+
 <image src = "source/c6.png" class = "smallimg"></image>
 
  
 -	Next we update the old cell state C t-1 with C t . Multiply f t forget information to forget and add new values
+
 <image src = "source/c7.png" class = "smallimg"></image>
  
 c.	Output gate: 
@@ -73,6 +77,7 @@ c.	Output gate:
  
 
 -	Finally multiply by the output of the sigmoid gate to get the necessary information.
+
 <image src = "source/c10.png" class = "smallimg"></image>
 							
 
@@ -90,6 +95,7 @@ c.	Output gate:
 
 						- Image 1: Data
 - The dataset is taken from the finance.yahoo.com package . The information about the stock exchange from March 8, 2010 to October 31, 2021 includes 2795 lines and 7 columns. Data fields:
+
 <image src = "source/ii.png" class = "smallimg"></image>
 							
 						- Image 2: Data Netflix stock 
@@ -167,6 +173,7 @@ __4. Predict stock price__
 - Yfinance = 0.1.64
  
 <h2> Run tutorial </h2>
+
 <image src="source/6.png" class = "center"> </image>
 			
 							- run web in terminal

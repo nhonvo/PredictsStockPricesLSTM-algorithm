@@ -9,30 +9,34 @@ Summary:
 
 <div class="title">The way use website </div>
 
-- __User interface__
+__1. User interface__
 
 
 <image src = "source/1.png" class = "center"></image>
-<br/>
-<br/>
-- To predict price stock you need to input the name of stock and the number of days you want to predict
 
--	__Choose: DayBegin, DayEnd, Stock code, Fieldstock.__
+								Image 1: User interface
+<br/>
+<br/>
+
+__2. Select: __Stocks__, __Field stocks__.__
+
+- To predict price stock you need to input the name of stock and the number of days you want to predict
 
 <image src = "source/2.png" class = "smallimg"></image>
 
+						Image 2: Select stocks and field stocks
+
+__3. Choose day to predict: DayBegin, DayEnd__
+
+<image src = "source/4.png" atl="chosse stock and Field" class = "smallimg"></image>
+						Image 2: Select stocks and field stocks
+
 
 Predict stock price:
--	Choose day to predict.
-
-<!-- <image src = "source/3.png" class = "center"></image> -->
-
-
-<image src = "source/4.png" class = "smallimg"></image>
-
 -	Output: Stock price
 
 <image src = "source/5.png" class = "smallimg"></image>
+<!-- <image src = "source/3.png" class = "center"></image> -->
 
 # Code train 
 

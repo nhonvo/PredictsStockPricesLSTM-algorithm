@@ -29,44 +29,39 @@ __2. Select: __Stocks__, __Field stocks__.__
 __3. Choose day to predict: DayBegin, DayEnd__
 
 <image src = "source/4.png" atl="chosse stock and Field" class = "smallimg"></image>
-						Image 2: Select stocks and field stocks
+			
+							Image 3: Select stocks and field stocks
 
 
-Predict stock price:
+__4. Predict stock price__
 -	Output: Stock price
 
 <image src = "source/5.png" class = "smallimg"></image>
-<!-- <image src = "source/3.png" class = "center"></image> -->
-
-# Code train 
+								
+							Image 4: Predict stock price
+<!-- # Code train 
 
 ![download](https://user-images.githubusercontent.com/83550230/149552455-47a24ddd-dcb5-465f-8a85-621752af0614.png)
 
 LSTM explain
 
-![markdown](https://github.com/truongnhon-hutech/github-project-du-doan-gia-co-phieu-LSTM/blob/master/source/%C4%90%E1%BB%93%20%C3%A1n%20tr%C3%AD%20tu%E1%BB%87%20nh%C3%A2n%20t%E1%BA%A1o.docx)
+![markdown](https://github.com/truongnhon-hutech/github-project-du-doan-gia-co-phieu-LSTM/blob/master/source/%C4%90%E1%BB%93%20%C3%A1n%20tr%C3%AD%20tu%E1%BB%87%20nh%C3%A2n%20t%E1%BA%A1o.docx) -->
 
-## How to install project
+<div class ="title">How to install project</div>
 
-### Library required
+<h2>Library required</h2>
 
-- Numpy  =  1.21.5:
-- Pandas = 1.3.5:
-- ikit-learn  = 1.0 :
-- nsorflow = 2.7.0
-- Streamlit = 1.0.0:
-- Yfinance = 0.1.64 
-- Matplotlib = 3.3.4 
+- [Numpy](https://www.numpy.org/) =  1.21.5
+- [Pandas](https://pandas.pydata.org/) = 1.3.5
+- [Matplotlib](https://matplotlib.org/) = 3.3.4
+- [Streamlit](https://streamlit.io/) = 1.0.0
+- [tensorflow](https://www.tensorflow.org/) = 2.7.0
+- skikit-learn  = 1.0 
+- Yfinance = 0.1.64
  
- ### Run tutorial
+<h2> Run tutorial </h2>
+<image src="source/6.png" class = "center"> </image>
  
- ![6](https://user-images.githubusercontent.com/83550230/149463572-c97adfaa-0e4e-4dd5-bd41-71e3a7cf4a97.png)
-
-## Advantages of the project
-
-- demo website
-- code train and explanation 
-
 
 # License
 Any questions? Feel free to contact me at: vothuongtruongnhon2002@gmail.com

@@ -146,15 +146,20 @@ __2. Select: __Stocks__, __Field stocks__.__
 
 						Image 2: Select stocks and field stocks
 
+- At here if we don't have stock you want, we can add it by clicking the button "Another stock" and input file csv of stock.
+- Tips: If your stock is new one, you can choose stock already on the market but similar with your stock.
+
 __3. Choose day to predict: DayBegin, DayEnd__
 
-<image src = "source/4.png" atl="chosse stock and Field" class = "smallimg"></image>
+<image src = "source/4.png" atl="choose stock and Field" class = "smallimg"></image>
 			
 							Image 3: Select stocks and field stocks
 
 
 __4. Predict stock price__
--	Output: Stock price
+-	Output: Stock price in future
+
+This train live with data of historical stock prices. So time to predict quite long.
 
 <image src = "source/5.png" class = "smallimg"></image>
 								

@@ -117,7 +117,7 @@ Above we add 3 consecutive LSTM layers, and every 1 layer is 1 dropout 0.3 . Fin
 
 <image src = "source/i4.png" class = "smallimg"></image>
 				
-						- Image 4: The chart shows the predicted and actual Facebook shares in the 	period of 2020 - 2021
+	- Image 4: The chart shows the predicted and actual Facebook shares in the 	period of 2020 - 2021
 
 +	MSE = 47.55213519067378
 +	MAE = 5.282921711782391
@@ -134,7 +134,7 @@ __1. User interface__
 
 <image src = "source/1.png" class = "center"></image>
 
-								Image 1: User interface
+			- Image 1: User interface
 <br/>
 <br/>
 

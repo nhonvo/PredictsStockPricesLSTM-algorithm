@@ -12,7 +12,7 @@ Long - Short Term Memory (LSTM) is a good algorithm for predicting stock prices.
 Long - Short Term Memory networks, commonly known as LSTMs, are a special type of RNN that also handle ordered sequence data well, but LSTMs are resistant to vanishing gradients from which to learn dependencies. far.
 <image src = "source/a.png" class = "smallimg"></image>
 
-					- Image 1:  LSTM network 
+								- Image 1:  LSTM network 
 
 
 -	Input: $C t-1 , h t-1 , x t$ . Where x t is the input in the tth state of the model. $C t-1 , h t-1$ are the output of the previous layer.
@@ -28,7 +28,7 @@ Long - Short Term Memory networks, commonly known as LSTMs, are a special type o
 
 <image src = "source/c.png" class = "smallimg"></image>
 
-					- Image 2:Cell state 
+								- Image 2:Cell state 
 
 Cell state is the horizontal line that runs through the top of the diagram, like a carousel , the memory of an LSTM network . It runs through the entire chain, with only a small linear number of interactions LSTMs are capable of removing or adding information to the cell state, which is carefully regulated by structures called gates.
 Portals are an optional way to pass information. They use sigmoid and tanh activation functions. An LSTM has three ports, for protection and control of cell state.
@@ -36,7 +36,7 @@ Portals are an optional way to pass information. They use sigmoid and tanh activ
 a.	Forget gate:
 <image src = "source/c2.png" class = "smallimg"></image>
 
-					- Image 3: Forget gate
+								- Image 3: Forget gate
 
 -	Forget gate : t does not pass through the sigmod layer to make informed decisions about whether to enter the cell state. h value t-1 and x t passing through the sigmod class yields a value between 0 and 1 for each cell state.
 
@@ -48,7 +48,7 @@ b.	Input gate:
 
 <image src = "source/c4.png" class = "smallimg"></image>
 	
-					- Image 4: Input gate
+								- Image 4: Input gate
 
 -	Input gate : q determines the new information to be stored in the cell state. Consists of two parts: The sigmod class that decides which values are updated and a tanh class that holds new values that can be added to the cell state .
 <image src = "source/c5.png" class = "smallimg"></image>
@@ -65,7 +65,7 @@ c.	Output gate:
 
 <image src = "source/c8.png" class = "smallimg"></image>
  
-					- Image 5: Output gate
+								- Image 5: Output gate
 
 -	Output gate: q decides what information will be approved. First, we run a sigmoid class, which determines what part of the cell state we should output. Then we set the cell state via tanh function (push the value to range from -1 to 1).
 
@@ -88,11 +88,11 @@ c.	Output gate:
 
 <image src = "source/i.png" class = "smallimg"></image>
 
-					- Image 1: Data
+								- Image 1: Data
 - The dataset is taken from the finance.yahoo.com package . The information about the stock exchange from March 8, 2010 to October 31, 2021 includes 2795 lines and 7 columns. Data fields:
 <image src = "source/ii.png" class = "smallimg"></image>
 							
-					- Image 2: Data Netflix stock 
+								- Image 2: Data Netflix stock 
 ## 2.	Data processing
 
 -	Here, we use the MinMaxScaler function of scikit learn library and scale the data set to numbers in the range (0, 1) to put into the neural network.
@@ -104,14 +104,14 @@ Above we add 3 consecutive LSTM layers, and every 1 layer is 1 dropout 0.3 . Fin
  
 <image src = "source/i1.png" class = "smallimg"></image>
 	
-					- Image 3: LSTM neural network 
+								- Image 3: LSTM neural network 
 ## 4. Experimental results:
 
 - Accuracy of the model on stock Facebook account:
 
 <image src = "source/i4.png" class = "smallimg"></image>
 				
-					- Image 4: The chart shows the predicted and actual Facebook shares in the 	period of 2020 - 2021
+								- Image 4: The chart shows the predicted and actual Facebook shares in the 	period of 2020 - 2021
 
 +	MSE = 47.55213519067378
 +	MAE = 5.282921711782391

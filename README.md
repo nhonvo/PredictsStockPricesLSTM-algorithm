@@ -4,6 +4,8 @@
 
 <div class="title">Long - Short Term Memory Algorithm</div>
 
+***Link video demo project***  [Click here!!!](https:////youtu.be/dJPBohy9x44)
+
 ## What is this?
 Long - Short Term Memory (LSTM) is a good algorithm for predicting stock prices. By the way use prices of past we can predict the prices of present and future.
 

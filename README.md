@@ -229,7 +229,13 @@ This train live with data of historical stock prices. So time to predict quite l
 # License
 Any questions? Feel free to contact me at: vothuongtruongnhon2002@gmail.com
 
+# Author
 
+[Võ Thương Trường Nhơn](https://github.com/truongnhon-hutech)
+
+[Phạm Đức Tài](https://github.com/tai121)
+
+Nguyễn Hồng Thái
 
 <style>
 	/* center */

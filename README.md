@@ -6,7 +6,8 @@
 
 ***Link video demo project***  [Click here!!!](https:////youtu.be/dJPBohy9x44)
 
-## What is this?
+## Introduction
+
 Long - Short Term Memory (LSTM) is a good algorithm for predicting stock prices. By the way use prices of past we can predict the prices of present and future.
 
 
@@ -14,7 +15,7 @@ Long - Short Term Memory (LSTM) is a good algorithm for predicting stock prices.
 Long - Short Term Memory networks, commonly known as LSTMs, are a special type of RNN that also handle ordered sequence data well, but LSTMs are resistant to vanishing gradients from which to learn dependencies. far.
 <image src = "source/a.png" class = "smallimg"></image>
 
-						- Image 1:  LSTM network 
+Image 1:  LSTM network 
 
 
 -	Input: $C t-1 , h t-1 , x t$ . Where x t is the input in the tth state of the model. $C t-1 , h t-1$ are the output of the previous layer.
@@ -24,22 +25,22 @@ Long - Short Term Memory networks, commonly known as LSTMs, are a special type o
 	-	Input gate: $i t = σ(U i * x t +W i * h t-1 + b i )$
 	-	Output gate: $o t = σ (U o * x t + W o * h t-1 + b o )$
 
-## 3. Explanation of the LSTM algorithm
+## Explanation of the LSTM algorithm
 
 - The LSTM network is an improvement of the traditional regression network, so the model has the following new points:
 
 <image src = "source/c.png" class = "smallimg"></image>
 
-						- Image 2:Cell state 
+Image 2: Cell state 
 
 Cell state is the horizontal line that runs through the top of the diagram, like a carousel , the memory of an LSTM network . It runs through the entire chain, with only a small linear number of interactions LSTMs are capable of removing or adding information to the cell state, which is carefully regulated by structures called gates.
 Portals are an optional way to pass information. They use sigmoid and tanh activation functions. An LSTM has three ports, for protection and control of cell state.
 
-a.	Forget gate:
+### a.	Forget gate:
 
 <image src = "source/c2.png" class = "smallimg"></image>
 
-						- Image 3: Forget gate
+Image 3: Forget gate
 
 -	Forget gate : t does not pass through the sigmod layer to make informed decisions about whether to enter the cell state. h value t-1 and x t passing through the sigmod class yields a value between 0 and 1 for each cell state.
 
@@ -47,45 +48,45 @@ a.	Forget gate:
 
 <image src = "source/c3.png" class = "smallimg"></image>
 
-b.	Input gate: 
+### b.	Input gate: 
 
 <image src = "source/c4.png" class = "smallimg"></image>
-	
-						- Image 4: Input gate
+
+Image 4: Input gate
 
 -	Input gate : q determines the new information to be stored in the cell state. Consists of two parts: The sigmod class that decides which values are updated and a tanh class that holds new values that can be added to the cell state .
 
 <image src = "source/c5.png" class = "smallimg"></image>
 
- 
+
 -	Finally combine the above two to create a new value to update the cell state.
 
 <image src = "source/c6.png" class = "smallimg"></image>
 
- 
+
 -	Next we update the old cell state C t-1 with C t . Multiply f t forget information to forget and add new values
 
 <image src = "source/c7.png" class = "smallimg"></image>
- 
-c.	Output gate: 
+
+### c.	Output gate: 
 
 <image src = "source/c8.png" class = "smallimg"></image>
- 
-						- Image 5: Output gate
+
+Image 5: Output gate
 
 -	Output gate: q decides what information will be approved. First, we run a sigmoid class, which determines what part of the cell state we should output. Then we set the cell state via tanh function (push the value to range from -1 to 1).
 
 <image src = "source/c9.png" class = "smallimg"></image>
- 
+
 
 -	Finally multiply by the output of the sigmoid gate to get the necessary information.
 
 <image src = "source/c10.png" class = "smallimg"></image>
 							
 
-<div class="title">Application to stock prediction problem </div>
+## Application to stock prediction problem
 
-## 1.	Get data
+### 1.	Get data
 
 -	Data is downloaded from yahoo finance
 -	From the downloaded dataset we extract the data field that we will use to train
@@ -95,31 +96,37 @@ c.	Output gate:
 
 <image src = "source/i.png" class = "smallimg"></image>
 
-						- Image 1: Data
+Image 1: Data
+
 - The dataset is taken from the finance.yahoo.com package . The information about the stock exchange from March 8, 2010 to October 31, 2021 includes 2795 lines and 7 columns. Data fields:
 
 <image src = "source/ii.png" class = "smallimg"></image>
 							
-						- Image 2: Data Netflix stock 
-## 2.	Data processing
+
+Image 2: Data Netflix stock 
+
+### 2.	Data processing
 
 -	Here, we use the MinMaxScaler function of scikit learn library and scale the data set to numbers in the range (0, 1) to put into the neural network.
-## 3. Building LSTM neuron model
+
+### 3. Building LSTM neuron model
 
 - As a first step, we need to instantiate the Sequential class. Sequential is a model where layers are stacked linearly
-The model class of the problem includes the LSTM, Dropout, and Dense classes .
-Above we add 3 consecutive LSTM layers, and every 1 layer is 1 dropout 0.3 . Finally, we pass a Dense layer with 1-dimensional output.
- 
+	The model class of the problem includes the LSTM, Dropout, and Dense classes .
+	Above we add 3 consecutive LSTM layers, and every 1 layer is 1 dropout 0.3 . Finally, we pass a Dense layer with 1-dimensional output.
+
 <image src = "source/i1.png" class = "smallimg"></image>
 	
-						- Image 3: LSTM neural network 
-## 4. Experimental results:
+
+Image 3: LSTM neural network 
+
+### 4. Experimental results:
 
 - Accuracy of the model on stock Facebook account:
 
 <image src = "source/i4.png" class = "smallimg"></image>
-				
-	- Image 4: The chart shows the predicted and actual Facebook shares in the 	period of 2020 - 2021
+
+Image 4: The chart shows the predicted and actual Facebook shares in the period of 2020 - 2021
 
 +	MSE = 47.55213519067378
 +	MAE = 5.282921711782391
@@ -129,47 +136,45 @@ Above we add 3 consecutive LSTM layers, and every 1 layer is 1 dropout 0.3 . Fin
 The value of Facebook votes tends to increase, from the chart above we can see that the prediction line matches the actual line, the average sum of squares is about 47.55 , the average price difference is low at dollar 5.28 , the price difference is high. approx. 23.7 7 dollar, lowest 0.06 dollar
 => Good predictive model.
 
-<div class="title">The way use website </div>
+## The flow of website
 
-__1. User interface__
+### 1. User interface
 
 
 <image src = "source/1.png" class = "center"></image>
 
-			- Image 1: User interface
-<br/>
-<br/>
+Image 1: User interface
 
-__2. Select: __Stocks__, __Field stocks__.__
+### __2. Select: __Stocks__, __Field stocks
 
 - To predict price stock you need to input the name of stock and the number of days you want to predict
 
 <image src = "source/2.png" class = "smallimg"></image>
 
-						Image 2: Select stocks and field stocks
+Image 2: Select stocks and field stocks
 
 - At here if we don't have stock you want, we can add it by clicking the button "Another stock" and input file csv of stock.
 - Tips: If your stock is new one, you can choose stock already on the market but similar with your stock.
 
-__3. Choose day to predict: DayBegin, DayEnd__
+### 3. Choose day to predict: DayBegin, DayEnd
 
 <image src = "source/4.png" atl="choose stock and Field" class = "smallimg"></image>
-			
-							Image 3: Select stocks and field stocks
 
+Image 3: Select stocks and field stocks
 
-__4. Predict stock price__
+### 4. Predict stock price
+
 -	Output: Stock price in future
 
 This train live with data of historical stock prices. So time to predict quite long.
 
 <image src = "source/5.png" class = "smallimg"></image>
-								
-							Image 4: Predict stock price
+
+Image 4: Predict stock price
 
 <div class ="title">How to install project</div>
 
-<h2>Library required</h2>
+## Library required
 
 - [Numpy](https://www.numpy.org/) =  1.21.5
 - [Pandas](https://pandas.pydata.org/) = 1.3.5
@@ -178,12 +183,12 @@ This train live with data of historical stock prices. So time to predict quite l
 - [tensorflow](https://www.tensorflow.org/) = 2.7.0
 - skikit-learn  = 1.0 
 - Yfinance = 0.1.64
- 
+
 <h2> Run tutorial </h2>
 
 <image src="source/6.png" class = "center"> </image>
-			
-							- run web in terminal
+
+run web in terminal
 
 <div class="title">Conclusion and comments </div>
 
@@ -227,6 +232,7 @@ This train live with data of historical stock prices. So time to predict quite l
 
 
 # License
+
 Any questions? Feel free to contact me at: vothuongtruongnhon2002@gmail.com
 
 # Author
@@ -236,42 +242,3 @@ Any questions? Feel free to contact me at: vothuongtruongnhon2002@gmail.com
 [Phạm Đức Tài](https://github.com/tai121)
 
 Nguyễn Hồng Thái
-
-
-
-
-
-
-
-
-
-
-
-</br>
-</br>
-</br>
-</br>
-</br>
-<style>
-	/* center */
-	.center {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 500px;
-		height: 250px;
-	}
-	.title{
-		color: #0066ff;
-		font-size: 30px;
-		font-weight: bold;
-		font-family: "Helvetica"
-	}
-	.smallimg{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-		height: 50%;
-	}
-</style>
